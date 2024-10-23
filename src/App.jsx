@@ -1,4 +1,4 @@
-import AuthPage from "./components/AuthPage.jsx";
+import AuthPage from "./components/Authentication/AuthPage.jsx";
 
 function App() {
 

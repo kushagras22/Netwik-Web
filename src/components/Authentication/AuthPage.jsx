@@ -1,6 +1,6 @@
-import React, { useState } from 'react'; // eslint-disable-line no-unused-vars
-import SignIn from './SignIn.jsx';
-import SignUp from './SignUp.jsx';
+import { useState } from 'react';
+import SignIn from './SignIn';
+import SignUp from './SignUp';
 
 const AuthPage = () => {
     const [isSignUp, setIsSignUp] = useState(false);
@@ -14,7 +14,7 @@ const AuthPage = () => {
     };
 
     return (
-        <div>
+        <div className="flex h-screen">
             {isSignUp ? (
                 <SignUp onSignInClick={handleSignInClick} />
             ) : (

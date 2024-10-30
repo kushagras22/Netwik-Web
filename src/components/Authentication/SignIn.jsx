@@ -17,7 +17,7 @@ const SignIn = ({ onSignUpClick }) => {
     };
 
     return (
-        <div className='flex-grow mt-52 h-full rounded-lg'>
+        <div className='flex-grow mt-52  flex-col h-full rounded-lg'>
             <div className="flex h-1/2 w-1/2 bg-gray-100 mx-auto justify-center">
                 {/* Left Side */}
                 <div className="w-1/2 p-10 flex flex-col justify-center">
@@ -25,8 +25,14 @@ const SignIn = ({ onSignUpClick }) => {
                     <p className="mb-6 text-gray-500 text-center">Login using social networks or your credentials</p>
 
                     <div className="flex justify-center space-x-6 mb-8">
-                        <FaGoogle className="text-2xl text-gray-600 hover:text-teal-500 cursor-pointer" />
-                        <FaGithub className="text-2xl text-black hover:text-teal-500 cursor-pointer" />
+                        <FaGoogle className="text-2xl text-gray-600 hover:text-teal-500 cursor-pointer"/>
+                        <FaGithub className="text-2xl text-black hover:text-teal-500 cursor-pointer"/>
+                    </div>
+
+                    <div className="flex items-center my-1">
+                        <hr className="flex-grow border-t border-black"/>
+                        <span className="mx-2 text-gray-500">OR</span>
+                        <hr className="flex-grow mx-2 border-t border-black"/>
                     </div>
 
                     <form onSubmit={handleSignIn}>
@@ -41,7 +47,7 @@ const SignIn = ({ onSignUpClick }) => {
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
                                 />
-                                <FaEnvelope className="absolute right-3 top-3 text-gray-400" />
+                                <FaEnvelope className="absolute right-3 top-3 text-gray-400"/>
                             </div>
                         </div>
                         <div className="mb-6">

@@ -11,8 +11,13 @@ const SignIn = ({ onSignUpClick }) => {
         console.log('Email:', email, 'Password:', password);
     };
 
+    const handleForgotPassword = () => {
+        // Logic to handle redirect to forgot password page
+        console.log("Redirecting to Forgot Password page");
+    };
+
     return (
-        <div className='flex-grow mt-52'>
+        <div className='flex-grow mt-52 h-full rounded-lg'>
             <div className="flex h-1/2 w-1/2 bg-gray-100 mx-auto justify-center">
                 {/* Left Side */}
                 <div className="w-1/2 p-10 flex flex-col justify-center">
@@ -69,6 +74,11 @@ const SignIn = ({ onSignUpClick }) => {
                         >
                             Sign In
                         </button>
+                        <div className="pt-2">
+                            <a href="#" onClick={handleForgotPassword} className="flex justify-center hover:underline">
+                                Forgot Password?
+                            </a>
+                        </div>
                     </form>
                 </div>
 

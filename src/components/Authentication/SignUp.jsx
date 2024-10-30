@@ -12,7 +12,7 @@ const SignUp = ({ onSignInClick }) => {
     };
 
     return (
-        <div className="flex-grow mt-52">
+        <div className="flex-grow mt-52 h-full ">
             <div className="flex h-1/2 w-1/2 bg-gray-100 mx-auto  justify-center">
                 {/* Left Side */}
                 <div className="bg-teal-500 w-1/2 flex items-center justify-center text-white">
@@ -29,8 +29,8 @@ const SignUp = ({ onSignInClick }) => {
                 </div>
 
                 {/* Right Side */}
-                <div className="w-1/2 bg-white p-8 flex flex-col justify-center">
-                    <h2 className="text-3xl font-bold text-teal-500 mb-6">Create Account</h2>
+                <div className="w-1/2 bg-gray-100 p-8 flex flex-col justify-center">
+                    <h2 className="text-3xl font-bold text-teal-500 mb-6 flex justify-center">Create Account</h2>
                     <div className="flex justify-center mb-6">
                         <FaGoogle className="text-gray-600 text-2xl mx-2 cursor-pointer hover:text-teal-500" />
                         <FaLinkedin className="text-gray-600 text-2xl mx-2 cursor-pointer hover:text-teal-500" />

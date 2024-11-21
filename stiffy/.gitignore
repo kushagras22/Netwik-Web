@@ -1,2 +1,6 @@
 /ignore/*
-/nodemodules/*
+/node_modules/*
+.env/
+.cache/
+.docker/
+.vscode/
